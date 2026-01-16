@@ -1,1 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap');
+
 @import url("reset.css");
+
+body{
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    background-color: #28293E;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main{
+    flex-grow: 1;
+}
+
+[class*="__container"]{
+    max-width: 1200px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.header, .footer{
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(204, 160, 16, 1) 68%);
+    color: #00D4FF;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding-block: 20px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+/* masonry */
+
+.masonry__container{
+    max-width: 1342px;
+    background-color: rgb(102, 42, 45);
+    
+}
+
+.masonry--margin{
+    margin-bottom: 50px;
+}
+
+.masonry__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    column-gap: 20px;
+    row-gap: 14px;
+    padding-block: 30px;
+}
+
+@media (min-width: 930px){
+    .masonry__grid{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+    row-gap: 24px;
+    }
+}
+
+.masonry__item{
+    position: relative;
+}
+
+.masonry__content{
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 304 / 184;
+
+}
+
+.masonry__content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.masonry__content h2{
+    position: relative;
+    z-index: 5;
+    color: #1d12ed;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+@media (min-width: 930px){
+
+.masonry__item:nth-child(17n + 1),
+.masonry__item:nth-child(17n + 4),
+.masonry__item:nth-child(17n + 8),
+.masonry__item:nth-child(17n + 10),
+.masonry__item:nth-child(17n + 16){
+    grid-row: span 2;
+}
+
+.masonry__item:nth-child(17n + 2),
+.masonry__item:nth-child(17n + 5),
+.masonry__item:nth-child(17n + 6),
+.masonry__item:nth-child(17n + 7){
+    grid-row: span 4;
+}
+
+.masonry__item:nth-child(17n + 3),
+.masonry__item:nth-child(17n + 9),
+.masonry__item:nth-child(17n + 11),
+.masonry__item:nth-child(17n + 17){
+    grid-row: span 1;
+}
+
+.masonry__item:nth-child(17n + 12),
+.masonry__item:nth-child(17n + 14),
+.masonry__item:nth-child(17n + 15){
+    grid-row: span 3;
+}
+
+.masonry__item:nth-child(17n + 13){
+    grid-row: span 5;
+}
+
+.masonry__item:nth-child(17n + 1) .masonry__content,
+.masonry__item:nth-child(17n + 4) .masonry__content,
+.masonry__item:nth-child(17n + 8) .masonry__content,
+.masonry__item:nth-child(17n + 10) .masonry__content,
+.masonry__item:nth-child(17n + 16) .masonry__content{
+    aspect-ratio: 304 / 184;
+    background-color: #1a25ee;
+}
+
+.masonry__item:nth-child(17n + 2) .masonry__content,
+.masonry__item:nth-child(17n + 6) .masonry__content,
+.masonry__item:nth-child(17n + 7) .masonry__content,
+.masonry__item:nth-child(17n + 12) .masonry__content,
+.masonry__item:nth-child(17n + 15) .masonry__content{
+    aspect-ratio: 304 / 296;
+    background-color: rgb(230, 25, 206);
+}
+
+.masonry__item:nth-child(17n + 3) .masonry__content,
+.masonry__item:nth-child(17n + 5) .masonry__content,
+.masonry__item:nth-child(17n + 9) .masonry__content,
+.masonry__item:nth-child(17n + 11) .masonry__content,
+.masonry__item:nth-child(17n + 14) .masonry__content,
+.masonry__item:nth-child(17n + 17) .masonry__content{
+    aspect-ratio: 304 / 152;
+    background-color: rgb(240, 168, 13);
+}
+
+.masonry__item:nth-child(17n + 13) .masonry__content{
+    aspect-ratio: 304 / 504;
+    background-color: rgb(14, 137, 5);
+}
+}
+
+/* landing-link */
+
+.landing-link{
+    background-color: #cb3737;
+    color: #82ec08;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+
+@media(any-hover: hover){
+    .landing-link:hover{
+        transform: scale(0.9);
+        background-color: #a63232;
+        text-decoration: underline;
+    }
+}
+
+.landing-link--margin{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
