@@ -749,10 +749,20 @@ body {
     align-items: center;
 }
 
-.social img{
+.social a{
     width: 16px;
     aspect-ratio: 1;
+    color: #B0B8BC;
+    transition: 0.3s;
 }
+
+@media (any-hover: hover){
+    .social a:hover{
+        color: #111b47;
+    }
+}
+
+
 
 
 
