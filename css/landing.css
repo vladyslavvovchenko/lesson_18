@@ -43,6 +43,7 @@ body {
     background-color: #111b47;
     border-radius: 2px;
     padding: 4px;
+    transition: 0.3s;
 }
 
 /* загальні стилі для секцій */
@@ -128,7 +129,6 @@ body {
     }
 }
 
-
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +139,11 @@ body {
     color: #505f98;
 }
 
-
+@media(max-width: 600px){
+    .menu__link--active{
+        text-decoration: underline;
+    }
+}
 
 @media(max-width: 767px){
     .menu-body .menu{
@@ -284,14 +288,12 @@ body {
 @media(max-width: 1139.98px){
     .hero__container{
         column-gap: 20px;
-       
     }
 }
 
 @media(min-width: 768px){
     .hero__container{
-        flex-wrap: nowrap;
-       
+        flex-wrap: nowrap; 
     }
 }
 
@@ -553,7 +555,6 @@ body {
 @media (max-width: 939.98px){
         .card__content{
         flex: 1 1 255px;
-    
     }
 }
 
@@ -741,10 +742,6 @@ body {
    color: #929ecc;
 }
 
-
-
-
-
 .social{
     display: flex;
     flex-wrap: wrap;
@@ -761,6 +758,20 @@ body {
 
 
 
+@media (any-hover: hover){
+    .button:hover{
+        background-color: #e35519;
+        color: #111b47;
+        transform: scale(1.05);
+    }
+}
+
+@media (any-hover: hover){
+    .menu a:hover{
+        color: #111b47;
+        text-decoration: underline;
+    }
+}
 
 
 
