@@ -48,7 +48,7 @@ body {
 
 @media (any-hover: hover){
     .button:hover{
-        background-color: #e35519;
+        background-color: #e3a619;
         color: #111b47;
         transform: scale(1.05);
     }
@@ -222,7 +222,7 @@ body {
     flex-direction: column;
     border: 3px solid  #111b47;;
     border-radius: 6px;
-    padding: 10px
+    padding: 9px
 }
 
 @media (max-width: 600px){
@@ -326,7 +326,7 @@ body {
     }
 }
 
-.hero__content h1{
+.hero__title{
     font-weight: 500;
     font-size: 50px;
     line-height: 1.32;
@@ -343,7 +343,7 @@ body {
 }
 
 @media(max-width: 600px){
-    .hero__content h1{
+    .hero__title{
         font-size: 34px;
     }
 
@@ -417,27 +417,24 @@ body {
 
 /* light */
 
-.light-first{
+.light-md{
     padding-block: 109px;
 }
 
-.light-second{
+.light--lg{
     padding-block: 122px 130px;
 }
 
-.light-third{
+.light--sm{
     padding-block: 91px 114px;
 }
 
-.light-fourth{
+.light--lr{
     padding-block: 142px 163px;
 }
 
 @media (max-width: 939px){
-    .light-first,
-    .light-second,
-    .light-third,
-    .light-fourth{
+    .light{
         padding-block: 40px;
     }
 }
